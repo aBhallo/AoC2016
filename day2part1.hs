@@ -2,6 +2,8 @@ import System.IO
 import Data.List
 import Data.Char
 
+-- Day 2 Part 1
+
 main = do  
         handle <- openFile "day2input.txt" ReadMode
         contents <- hGetContents handle
