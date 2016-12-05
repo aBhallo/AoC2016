@@ -3,7 +3,7 @@ import Data.Char
 import Data.Maybe
 
 main = do  
-        let input  = "abc"
+        let input = "ojvtpuvg"
             result = compute input
         print result
 
