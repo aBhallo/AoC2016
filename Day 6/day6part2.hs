@@ -13,7 +13,4 @@ compute :: [String] -> String
 compute input = map (\x -> leastFreq $ map (!! x) input) [0..7]
 
 leastFreq :: Ord a => [a] -> a
-leastFreq list = fst $ last $ sortBy valueOrder $ map (\x -> (head x, length x)) $ group $ sort list
-
-valueOrder :: Ord a => (s, a) -> (t, a) -> Ordering
-valueOrder (_, v1) (_, v2) = compare v2 v1
+leastFreq list = head $ head $ sortBy (\x -> (\y -> compare (length x) (length y))) $ group $ sort list
