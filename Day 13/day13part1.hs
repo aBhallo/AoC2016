@@ -8,7 +8,7 @@ main = print compute
 type Coord = (Int, Int)    -- (x co-ord, y co-ord)
 
 goal :: Coord
-goal = (14,4)--(31, 39)
+goal = (31, 39)
 
 designersNumber :: Int
 designersNumber = 1350
