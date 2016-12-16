@@ -5,7 +5,7 @@ import Numeric
 
 main = print compute
 
-type Coord = (Int, Int)    -- (x co-ord, y co-ord)
+type Coord = (Int, Int)
 
 goal :: Coord
 goal = (31, 39)
